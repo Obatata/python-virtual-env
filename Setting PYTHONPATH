@@ -1,0 +1,22 @@
+##### current PYTHONPATH
+#Linux
+echo $PYTHONPATH # display current PYTHONPATH
+export PYTHONPATH="$PWD" # si nous voulons un PYTHONPATH
+
+# Windows
+Got to the Windows menu, right-click on “Computer” and select “Properties”:
+From the computer properties dialog, select “Advanced system settings” on the left:
+From the advanced system settings dialog, choose the “Environment variables” button:
+In the Environment variables dialog, click the “New” button in the top half of the dialog, to make a new user variable:
+Give the variable name as PYTHONPATH and the value is the path to the code directory. Choose OK and OK again to save this variable.
+Now open a cmd Window (Windows key, then type cmd and press Return). Type:
+
+echo %PYTHONPATH%
+
+to confirm the environment variable is correctly set.
+If you want your IPython sessions to see this new PYTHONPATH variable, you’ll have to restart your terminal and restart IPython so that it picks up PYTHONPATH from the environment settings.
+
+
+#Python
+>>> import os
+>>> os.environ['PYTHONPATH']
