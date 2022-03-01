@@ -26,3 +26,11 @@ source env/bin/activate
 
 # desactivation du virtualenv "env"
 deactivate
+
+
+
+
+BONUS :
+-------
+résolution des problèmes de SSL sur Pypi 
+pip install --trusted-host=pypi.python.org --trusted-host=pypi.org --trusted-host=files.pythonhosted.org "package_name"
