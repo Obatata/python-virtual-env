@@ -17,6 +17,8 @@ VIRTUALENV:
 -----------
 # installer avec pip
 pip install virtualenv
+sudo apt install python3-virtualenv
+
 
 # création d'un virtualenv intitulé "env"
 virtualenv -p python3 env
