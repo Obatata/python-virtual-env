@@ -23,8 +23,17 @@ sudo apt install python3-virtualenv
 # création d'un virtualenv intitulé "env"
 virtualenv -p python3 env
 
-# activation de virtualenv "env" 
+#####################################
+# activation de virtualenv "env" On   Ubuntu
+####################################
 source env/bin/activate
+
+
+#####################################
+# activation de virtualenv "env" On   Windows
+####################################
+env/Scripts/activate
+
 
 # desactivation du virtualenv "env"
 deactivate
