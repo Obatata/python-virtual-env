@@ -13,15 +13,21 @@ conda activate env
 deactivate
 
 
-VIRTUALENV:
------------
-# installer avec pip
-pip install virtualenv
-sudo apt install python3-virtualenv
-
+ 1-  VIRTUALENV:
+    -----------
+    # installer avec pip 
+    pip install virtualenv
+    sudo apt install python3-virtualenv
+2- venv
+   ----
+   # installer on ubuntu 
+   sudo apt install python3-venv
+  
+   
 
 # création d'un virtualenv intitulé "env"
-virtualenv -p python3 env
+virtualenv -p python3 env # with virtualenv
+python3 -m venv /venv-dev # with venv
 
 #####################################
 # activation de virtualenv "env" On   Ubuntu
